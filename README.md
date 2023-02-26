@@ -27,3 +27,20 @@ Disconnect from the VPN:
 ```
 sudo killall openvpn
 ```
+
+
+## If you want to openvpn ignore somesite, you can open the file config : client.ovpn
+
+```
+Right after this line 
+push-peer-info
+```
+
+Add this new line:
+```
+push-peer-info
+#route whoer.net 255.255.255.255 net_gateway
+route chat.openai.com 255.255.255.255 net_gateway
+<ca>
+
+```
