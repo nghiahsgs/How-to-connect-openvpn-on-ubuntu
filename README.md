@@ -46,7 +46,7 @@ route chat.openai.com 255.255.255.255 net_gateway
 ```
 
 
- if you are having constant disconnect problem with the new Open VPN. Try to add this line to your VPN config and readd it the OpenVPN before reconnecting
+ if you are having constant disconnect problem with the new Open VPN. Try to add this line to your VPN config and readd it the OpenVPN before `<cert>`
 ```
 reneg-sec 0
 ```
